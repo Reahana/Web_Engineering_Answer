@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        
+        li{
+            border: 1px;
+        }
+        .navbar {
+            display: inline-block;
+            padding-left: 20px;
+            
+        }
+        .dropdown{
+            
+            position: relative;
+             display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+        position: absolute;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .dropdown-content li{
+            display: block;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li class="navbar"><a href="">Home</a> </li>
+            <li class="dropdown navbar">
+               <a href=""> Department</a>
+                <ul class="dropdown-content" >
+                    <li><a href="">CSE</a></li>
+                    <li><a href="">BBA</a></li>
+                    <li><a href="">THM</a></li>  <!-- not in Q77 -->
+                </ul>
+            </li>
+            <li class="navbar"><a href="">About</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

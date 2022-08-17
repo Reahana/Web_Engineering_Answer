@@ -15,18 +15,17 @@
          $first_name =$_POST['first_name'];
          $last_name=$_POST['last_name'];
          $email=$_POST['email'];
+
          $sql = "INSERT INTO students ( roll ,first_name , last_name ,email ) 
-      
-         VALUES ('$roll','$first_name','$last_name','$email')";
+                    VALUES ('$roll','$first_name','$last_name','$email')";
+
             if(mysqli_query($link,  $sql ) ) 
-         {
-            
-         echo "\n Data stored  successfully <br>";
-         }
+            {  
+            echo " Data stored  successfully <br>";
+            }
          else{
-         
             echo "Error inserting data: <br>" . mysqli_error($link);
-         }
+            }
       }
    //retrive data
       $newsql = 'SELECT * FROM students';

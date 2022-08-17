@@ -9,16 +9,18 @@
      }
      echo "Connected successfully \n";
      $sql = 'CREATE Table students(
-        roll INT(10)   PRIMARY KEY,
+         roll INT(10)   PRIMARY KEY,
         first_name VARCHAR(20) NOT NULL,
-        last_name VARCHAR(20) NOT NULL,
-        email VARCHAR(50)
-     )';
-     if(mysqli_query($link,  $sql ) ) {
-        echo "\n Table students created successfully \n";
+        email VARCHAR(50))';
+     if(mysqli_query($link,  $sql ) ) 
+     {
+        echo "\n Table students created
+         successfully \n";
      }
      else{
      
-        echo "Error creating table: " . mysqli_error($link);
+        echo "Error creating table: " 
+        . mysqli_error($link);
     }
-  ?>
+    mysqli_close($link);
+  ?> 

@@ -17,4 +17,5 @@
      
     echo 'Could not create database: '. mysqli_error($link);
     }
+    mysqli_close($link);
   ?>
